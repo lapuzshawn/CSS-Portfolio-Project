@@ -1,0 +1,286 @@
+/* -----------PHASE 1 BASE PROPERTIES ----------  */
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Element Selectors select all of that element type */
+body {
+    /* background-color: #e2d4ca; */
+    background-color: #f6ebd1;
+}
+
+/* This changes the text color */
+a {
+    color: #1e2b31;
+    color: #353535;
+    text-decoration: underline;
+}
+
+/* This changes the font size to 16px */
+p {
+    font-size: 16px;
+    margin: 12 px;
+}
+
+/* -----------PHASE 2 HEADER ----------  */
+/* Class Selectors select all elements with that class */
+.header {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    /* background-color: #4f6c7a; */
+    background-color: #A3DDE5;
+    color: #ffffff;
+}
+
+.header h1 {
+    position: relative;
+    padding-left: 150px;
+    padding-right: 30px;
+    margin-left: -40px;
+    margin-bottom: -20px;
+    font-size: 30px;
+    color: #fbf4e4;
+    background-color: #353535;
+    display: inline-block;
+}
+
+.header div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    padding-bottom: 25px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+/* This changes displays the list in an inline block with 25px left margin */
+.header div ul li {
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    text-decoration-line: underline;
+}
+
+.header div ul li:hover {
+    text-decoration-line: none;
+}
+
+.header img {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-width: 5px;
+    border-radius: 50%; /*makes img into a circle*/
+    margin-top: -25px;
+    border-color: #353535;
+    border-style: dotted;
+}
+
+
+/* -----------PHASE 3 BANNER ----------  */
+/* -----------FIX THIS----------  */
+.banner {
+    height: 100px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* .banner {
+    background-image: url(../images/banner.jpg);
+    position: relative;
+    height: 10%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.banner img {
+    position: center;
+    height: 100%;
+    justify-content: center;
+
+}
+
+
+/* -----------PHASE 4 CONTENT ----------  */
+/* This adds a contents margin on the left of 20px and sets width to 75%  */
+.content {
+    width: 85%;
+    display: inline-block;
+    margin-right: 10px;
+    float: right;
+
+}
+
+/* .content {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 85%;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    padding: 30px;
+    padding-top: 0px;
+    max-height: fit-content(20em);
+    display: inline-block;
+    float: right;
+    background-color: none;
+    color: #1e2b31;
+    border-left: solid;
+    border-color: #4f6c7a;
+} */
+
+.content h2{
+    display: inline-block;
+    margin-left: -200px;
+
+}
+
+
+/* -----------PHASE 5 CONTENT CARD----------  */
+.about-me {
+    margin-bottom: 20px;
+    margin-right: 50px;
+    padding: 30px;
+    padding-top: 0px;
+    max-height: fit-content(20em);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: none;
+    color: #1e2b31;
+    border-left: solid;
+    border-color: #4f6c7a;
+}
+
+.my-work {
+    margin-bottom: 20px;
+    margin-right: 50px;
+    padding: 50px;
+    
+    max-height: fit-content(20em);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: none;
+    color: #1e2b31;
+    border-left: solid;
+    border-color: #4f6c7a;
+}
+
+.contact-me {
+    margin-bottom: 20px;
+    margin-right: 50px;
+    padding: 20px;
+    padding-top: 0px;
+    max-height: fit-content(20em);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: none;
+    color: #1e2b31;
+    border-left: solid;
+    border-color: #4f6c7a;
+}
+
+
+
+/* This changes displays the list in an inline block with 25px left margin */
+.contact-me div ul li {
+    display: inline-block;
+    margin-left: 25px;
+    color: #1e2b31;
+}
+
+
+/* -----------PHASE 6 PRODUCTS AND CARD FLEX----------  */
+/* -----------PHASE 6.1 PRODUCTS FLEX----------  */
+.products {
+    flex: 4;
+    /* background-color: #a2a2a2; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+/*----------PHASE 6.3 CARD PROPERTIES ----------  */
+
+.card {
+    max-height: 250px;
+    max-width: fit-content;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #a8c6bc;
+    border-radius: 1px;
+    margin: 10px;
+    flex: 0 0 400px;
+  }
+
+
+  /*----------PHASE 6.3 HEADER PROPERTIES ----------  */
+  .card header {
+    position: relative;
+    top: -85px;
+    left: 0px;
+    width: fit-content;
+    background-color: #a8c6bc;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+        /* border-style: dashed; */
+  }
+  .card header p {
+    font-size: 11px;
+    font-weight: 300;
+    color: #353535;
+
+  }
+
+  .card h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+/*----------PHASE 6.5 100% WIDTH OF 1ST FLEX CARD ----------  */
+/*----------FIX THIS----------  */
+  .card:nth-of-type(1) {
+    width: 100%;
+    border-style: dashed;
+ 
+  }
+
+
+/* -----------PHASE 6.7 CARD BLUR THEN UNBLUR ON HOVER ----------  */
+  .card img {
+    position: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    filter: blur(5px);
+  }
+
+  .card:hover img {
+    filter: blur(0px);
+}  
+
+
+  
+/* -----------PHASE 7 FOOTER ----------  */
+/* This adds attributes to the footer*/
+.footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+    color: #353535;
+    
+    
+}
+
+.footer h2 {
+    font-size: 15px;
+    color: #353535;
+}
+
